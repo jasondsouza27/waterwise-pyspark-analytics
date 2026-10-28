@@ -1,0 +1,30 @@
+# Logs
+*.log
+
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / Cache
+.pytest_cache/
+
+# Local Spark / Hadoop temp / generated outputs
+outputs/parquet/*
+!outputs/parquet/.gitkeep
+outputs/reports/*
+!outputs/reports/.gitkeep
+metastore_db/
+derby.log
+*.sparkStaging*
+
+# Streamlit local
+.streamlit/secrets.toml
+
+# OS Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Archive zip (raw CSV is included)
+data/HSB_Living_Lab_Data_Package.zip
